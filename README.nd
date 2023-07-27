@@ -1,0 +1,72 @@
+# GhostwriteIt.AI - AI Writing Assistant for Book Writing
+
+![GhostwriteIt.AI Logo](link-to-your-logo.png)
+
+GhostwriteIt.AI is an AI-powered writing assistant designed to streamline the book writing process for authors, journalists, academics, and anyone looking to create compelling written content. This tool leverages the power of artificial intelligence to generate ideas, titles, and outlines, making the writing journey smoother and more efficient.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Writing a book can be a challenging endeavor, and authors often find themselves grappling with the initial steps of ideation and title generation. GhostwriteIt.AI aims to alleviate this burden by acting as a helpful writing assistant. Through natural language processing and machine learning, GhostwriteIt.AI engages in interactive conversations with users, gathering information about their writing ideas and transforming them into well-crafted titles.
+
+## Key Features
+
+- **Interactive Chat Interface:** GhostwriteIt.AI utilizes Streamlit to provide users with a user-friendly chat-based interface. Users can input their book ideas and engage in dynamic conversations with the AI assistant.
+
+- **Prompt-Based Generation:** By using the LangChain library, GhostwriteIt.AI leverages prompts to guide the AI model (OpenAI) towards generating meaningful and relevant responses.
+
+- **Title Formulation:** The AI assistant assists users in formulating book titles based on the provided ideas. It acknowledges the user's choice and asks for additional information to create compelling titles.
+
+- **Customizable Writing Styles:** Users have the flexibility to specify their preferred writing styles, ensuring that the generated titles align with their creative vision.
+
+## Installation
+
+To run GhostwriteIt.AI on your local machine, follow these steps:
+
+1. Clone this repository to your preferred directory:
+
+```bash
+git clone https://github.com/precocollc/ghostwriteit-streamlit_python.git
+```
+
+2. Change into the project directory:
+
+```bash
+cd ghostwriteit-streamlit_python
+```
+
+3. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Obtain an OpenAI API key and save it in a `.env` file in the project's root directory:
+
+```plaintext
+OPENAI_API_KEY=your_openai_api_key
+```
+
+## Usage
+
+To start using GhostwriteIt.AI, follow these steps:
+
+1. Run the Streamlit app:
+
+```bash
+streamlit run main.py
+```
+
+2. The app will be accessible in your web browser at `http://localhost:8501`.
+
+3. Once the app is loaded, you'll be greeted with a chat interface.
+
+4. Enter your book idea in the provided text input and click Generate button
