@@ -9,6 +9,14 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
+from supabase import create_client, Client
+
+def initialize_supabase():
+    load_dotenv()
+    supabase_url = os.getenv('SUPABASE_URL')
+    supabase_key = os.getenv('SUPABASE_KEY')
+    supabase = create_client(supabase_url, supabase_key)
+    return supabase
 
 def load_openai_key():
     load_dotenv()
@@ -21,6 +29,7 @@ def initialize_llm(openai_key):
 
 def main():
     openai_key = load_openai_key()
+    supabase = initialize_supabase()
     llm = initialize_llm(openai_key)
     
     st.header("GHOSTWRITEIT.AI")
